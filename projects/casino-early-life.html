@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casino Early Life — Sean Goldsworthy</title>
+  <meta name="description" content="Cohort analytics framework identifying behavioural signals that predict long-term customer value.">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">SG<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../skills.html">Skills</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<article class="case-study">
+  <a href="../projects.html" class="back-link">&larr; All Projects</a>
+
+  <div class="mt-8">
+    <span class="tag text-xs font-medium text-accent uppercase tracking-wide">Product</span>
+    <h1>Casino Early Life</h1>
+    <p class="summary">Built an analytics framework for casino customer acquisition and early-life optimisation — acquisition channel analysis, retention modelling, LTV forecasting, and A/B testing to improve onboarding and marketing allocation.</p>
+    <div class="tech-tags mt-4">
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Snowflake</span>
+      <span class="tech-tag">Power BI</span>
+      <span class="tech-tag">A/B Testing</span>
+      <span class="tech-tag">Cohort Analysis</span>
+    </div>
+  </div>
+
+  <h2>Business Problem</h2>
+  <p>The casino business acquired thousands of new customers monthly but had limited understanding of what drove early-life churn and long-term value. Which acquisition channels produced quality players? How did individual game volatility affect behaviour? Where exactly were players dropping off — and could we intervene before they left?</p>
+
+  <h2>Why It Was Difficult</h2>
+  <ul>
+    <li>Player behaviour varied enormously by acquisition channel, game type, and volatility exposure</li>
+    <li>The most critical churn window turned out to be the first hour — far more granular than standard cohort windows</li>
+    <li>Game-level volatility analysis required understanding of mathematical properties alongside behavioural data</li>
+    <li>Required constant stakeholder collaboration — this was not a self-service project but an iterative, decision-driven engagement</li>
+  </ul>
+
+  <h2>My Role</h2>
+  <p>I owned the analytical framework end-to-end: acquisition channel analysis, player behaviour modelling, game volatility impact assessment, gap analysis, and retention/LTV measurement. This was a highly stakeholder-facing project — working iteratively with commercial and product leads to shape decisions rather than just deliver reports.</p>
+
+  <h2>Approach</h2>
+
+  <h3>Player Behaviour Analysis</h3>
+  <ul>
+    <li>Built granular first-hour, first-session, and first-day behavioural tracking — identifying that the majority of churn occurred within the first 60 minutes</li>
+    <li>Extended to standard 7/14/30/90-day cohort windows with real-time updates</li>
+    <li>Mapped player journeys across game types, session patterns, and deposit behaviour</li>
+  </ul>
+
+  <h3>Game Volatility & Gap Analysis</h3>
+  <ul>
+    <li>Analysed individual game volatility and its effect on player behaviour and early-life dropout</li>
+    <li>Identified gaps in the game portfolio where player demand existed but product supply was weak</li>
+    <li>Quantified how high-volatility early experiences accelerated churn for certain player segments</li>
+  </ul>
+
+  <h3>Acquisition Channel & Retention</h3>
+  <ul>
+    <li>Decomposed LTV and retention by acquisition channel to identify which sources produced sustainable players</li>
+    <li>Built A/B testing frameworks to evaluate onboarding interventions</li>
+    <li>Created channel-level scorecards linking spend to long-term quality metrics</li>
+  </ul>
+
+  <h2>Architecture</h2>
+  <pre>
+Raw Player Event Data (real-time)
+      ↓
+Behavioural Feature Engineering
+      ↓
+┌──────────────────────────────────────────────┐
+│  First-Hour Analysis  │  Game Volatility     │
+│  Cohort Metrics       │  Gap Analysis        │
+│  Channel Scorecards   │  A/B Test Results    │
+└──────────────────────────────────────────────┘
+      ↓
+Stakeholder Presentations & Decision Workshops
+      ↓
+Product & Commercial Actions</pre>
+
+  <h2>Technologies</h2>
+  <ul>
+    <li><strong>SQL</strong> — Complex cohort construction, window functions, real-time aggregations</li>
+    <li><strong>Python</strong> — Statistical analysis, volatility modelling, A/B test evaluation</li>
+    <li><strong>Snowflake</strong> — Data platform and computation</li>
+    <li><strong>Power BI</strong> — Reporting and stakeholder-facing visualisations</li>
+  </ul>
+
+  <h2>Outcome</h2>
+  <ul>
+    <li>Identified first-hour churn as the primary dropout point — led to targeted onboarding interventions</li>
+    <li>Game volatility insights influenced portfolio decisions and default game recommendations for new players</li>
+    <li>Acquisition channel analysis redirected marketing spend toward higher-LTV sources</li>
+    <li>Gap analysis identified product opportunities that were subsequently prioritised by the roadmap team</li>
+  </ul>
+
+  <h2>Lessons Learned</h2>
+  <ul>
+    <li>The most impactful insights came from going more granular than anyone expected — first-hour analysis revealed patterns invisible at daily/weekly resolution</li>
+    <li>Game volatility is a player experience problem, not just a mathematical property — it directly drives early churn for inexperienced players</li>
+    <li>Stakeholder-driven projects deliver more impact than self-service tools when the decisions are complex and require commercial judgement</li>
+    <li>A/B testing in casino requires careful control for game mix and session depth, not just conversion rates</li>
+  </ul>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="text-sm text-muted">&copy; 2025 Sean Goldsworthy. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sean-goldsworthy-2992a6145" target="_blank">LinkedIn</a>
+      <a href="mailto:spgoldy1995@hotmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

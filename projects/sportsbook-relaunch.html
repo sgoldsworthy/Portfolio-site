@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sportsbook Relaunch — Sean Goldsworthy</title>
+  <meta name="description" content="Analytics strategy for a major sportsbook product relaunch driving 30% growth.">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">SG<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../skills.html">Skills</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<article class="case-study">
+  <a href="../projects.html" class="back-link">&larr; All Projects</a>
+
+  <div class="mt-8">
+    <span class="tag text-xs font-medium text-accent uppercase tracking-wide">Commercial</span>
+    <h1>Sportsbook Relaunch</h1>
+    <p class="summary">Led the analytics strategy for a major sportsbook product relaunch, combining cohort analysis, A/B testing, and commercial modelling to measure and drive growth.</p>
+    <div class="tech-tags mt-4">
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Snowflake</span>
+      <span class="tech-tag">Power BI</span>
+      <span class="tech-tag">Cohort Analysis</span>
+      <span class="tech-tag">A/B Testing</span>
+    </div>
+  </div>
+
+  <h2>Business Problem</h2>
+  <p>The sportsbook product was underperforming against market benchmarks. A full relaunch was planned — new UX, new pricing, new market offerings — but the business needed a rigorous analytical framework to measure success, forecast outcomes, and de-risk the investment.</p>
+
+  <h2>Why It Was Difficult</h2>
+  <ul>
+    <li>Multiple simultaneous changes made attribution complex</li>
+    <li>No clean baseline existed due to ongoing promotions and seasonal variation</li>
+    <li>Stakeholders wanted forecasts before the product shipped — with quantified uncertainty</li>
+    <li>Commercial pressure to demonstrate ROI quickly</li>
+  </ul>
+
+  <h2>My Role</h2>
+  <p>I owned the analytics strategy for the relaunch: experiment design, baseline modelling, forecasting, and ongoing measurement. I worked directly with the Head of UK Sports Commercial to frame success metrics and quantify the business case.</p>
+
+  <h2>Approach</h2>
+
+  <h3>Experiment Design</h3>
+  <ul>
+    <li>Designed a phased rollout strategy with control groups</li>
+    <li>Defined primary and secondary success metrics</li>
+    <li>Built power calculations to determine sample sizes and test duration</li>
+  </ul>
+
+  <h3>Statistical Forecasting</h3>
+  <ul>
+    <li>Developed counterfactual models to estimate what would have happened without the relaunch</li>
+    <li>Applied time-series decomposition to isolate relaunch effects from seasonality and promotions</li>
+    <li>Quantified uncertainty with confidence intervals</li>
+  </ul>
+
+  <h3>Commercial Modelling</h3>
+  <ul>
+    <li>Built financial models linking product metrics to revenue outcomes</li>
+    <li>Created scenario analysis for different rollout speeds</li>
+    <li>Modelled cannibalisation effects across product lines</li>
+  </ul>
+
+  <h2>Architecture</h2>
+  <pre>
+Historical Data
+      ↓
+Baseline & Counterfactual Models
+      ↓
+┌──────────────────────────────────┐
+│  A/B Test   │  Time Series Model │
+└──────────────────────────────────┘
+      ↓
+Causal Impact Estimation
+      ↓
+Commercial Reporting → Leadership</pre>
+
+  <h2>Technologies</h2>
+  <ul>
+    <li><strong>SQL</strong> — Complex analytical queries, cohort construction</li>
+    <li><strong>Python</strong> — Statistical modelling, forecasting, causal inference</li>
+    <li><strong>Snowflake</strong> — Data platform and computation</li>
+    <li><strong>Statistical Methods</strong> — Difference-in-differences, synthetic control, Bayesian structural time series</li>
+  </ul>
+
+  <h2>Outcome</h2>
+  <ul>
+    <li>30% sportsbook revenue growth attributed to the relaunch</li>
+    <li>Clear causal evidence separated relaunch effects from market trends</li>
+    <li>Forecasting framework reused across subsequent product launches</li>
+    <li>Approach became the template for all major product changes</li>
+  </ul>
+
+  <h2>Lessons Learned</h2>
+  <ul>
+    <li>Invest heavily in baseline measurement before any change — you can't prove impact without a clean counterfactual</li>
+    <li>Stakeholders respond better to scenarios with uncertainty ranges than point estimates</li>
+    <li>Speed matters: daily reporting during rollout caught issues early</li>
+    <li>The hardest conversations are about what you can't measure, not what you can</li>
+  </ul>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="text-sm text-muted">&copy; 2025 Sean Goldsworthy. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sean-goldsworthy-2992a6145" target="_blank">LinkedIn</a>
+      <a href="mailto:spgoldy1995@hotmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BetMGM Expansion — Sean Goldsworthy</title>
+  <meta name="description" content="Market analytics for BetMGM's US expansion — launch measurement, benchmarking, investment allocation.">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">SG<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../skills.html">Skills</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<article class="case-study">
+  <a href="../projects.html" class="back-link">&larr; All Projects</a>
+
+  <div class="mt-8">
+    <span class="tag text-xs font-medium text-accent uppercase tracking-wide">International</span>
+    <h1>BetMGM Expansion</h1>
+    <p class="summary">Delivered analytics for BetMGM's US market expansion, building measurement frameworks for new state launches and cross-market performance benchmarking.</p>
+    <div class="tech-tags mt-4">
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">Snowflake</span>
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Power BI</span>
+      <span class="tech-tag">Market Analytics</span>
+    </div>
+  </div>
+
+  <h2>Business Problem</h2>
+  <p>BetMGM was expanding rapidly across US states, each with different regulatory environments, competitive landscapes, and customer demographics. The business needed a consistent analytical framework to measure launch performance, benchmark across markets, and allocate investment efficiently.</p>
+
+  <h2>Why It Was Difficult</h2>
+  <ul>
+    <li>Each state had unique regulatory constraints affecting product availability and marketing</li>
+    <li>Market maturity varied dramatically — some states were new, others established</li>
+    <li>No historical baseline for new state launches made forecasting unreliable</li>
+    <li>Competitive intelligence was fragmented and inconsistent</li>
+  </ul>
+
+  <h2>My Role</h2>
+  <p>I built the market analytics framework for the US expansion, including launch measurement templates, cross-market benchmarking, and investment allocation modelling. I worked closely with the US commercial team and UK-based strategy leads.</p>
+
+  <h2>Approach</h2>
+
+  <h3>Launch Measurement</h3>
+  <ul>
+    <li>Designed standardised launch scorecards applicable to any new state</li>
+    <li>Defined early-signal metrics that predict long-term market health</li>
+    <li>Built automated reporting for the first 30/60/90 days post-launch</li>
+  </ul>
+
+  <h3>Cross-Market Benchmarking</h3>
+  <ul>
+    <li>Created normalised comparison frameworks accounting for market size, competition, and regulatory environment</li>
+    <li>Built cohort-adjusted benchmarks so new markets could be compared fairly against mature ones</li>
+    <li>Identified leading indicators of market success vs. underperformance</li>
+  </ul>
+
+  <h3>Investment Allocation</h3>
+  <ul>
+    <li>Modelled customer acquisition cost and lifetime value by state</li>
+    <li>Built scenario models for different investment levels</li>
+    <li>Quantified diminishing returns to help optimise marketing spend</li>
+  </ul>
+
+  <h2>Architecture</h2>
+  <pre>
+State-Level Data (regulatory, competitive, financial)
+      ↓
+Normalisation Layer (market size, maturity adjustment)
+      ↓
+┌──────────────────────────────────────┐
+│  Launch Scorecards  │  Benchmarking  │
+└──────────────────────────────────────┘
+      ↓
+Investment Models
+      ↓
+US Leadership & UK Strategy</pre>
+
+  <h2>Technologies</h2>
+  <ul>
+    <li><strong>SQL</strong> — Complex multi-market queries and cohort construction</li>
+    <li><strong>Snowflake</strong> — Central data platform spanning UK and US data</li>
+    <li><strong>Python</strong> — Market modelling and scenario analysis</li>
+    <li><strong>Power BI</strong> — Executive dashboards for cross-market visibility</li>
+  </ul>
+
+  <h2>Outcome</h2>
+  <ul>
+    <li>Standardised measurement framework adopted across all new state launches</li>
+    <li>Clear identification of which markets required additional investment vs. optimisation</li>
+    <li>Reduced time from launch to first actionable insight from weeks to days</li>
+    <li>Framework influenced multi-million dollar investment allocation decisions</li>
+  </ul>
+
+  <h2>Lessons Learned</h2>
+  <ul>
+    <li>Standardisation enables speed — without templates, every launch reinvents the wheel</li>
+    <li>New markets need different metrics than mature ones; applying mature benchmarks too early creates false alarms</li>
+    <li>Cultural differences between UK and US teams require deliberate alignment on definitions and expectations</li>
+    <li>Regulatory constraints are data problems, not just legal problems — encode them in your models</li>
+  </ul>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="text-sm text-muted">&copy; 2025 Sean Goldsworthy. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sean-goldsworthy-2992a6145" target="_blank">LinkedIn</a>
+      <a href="mailto:spgoldy1995@hotmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

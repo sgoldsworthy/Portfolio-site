@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Executive Agents — Sean Goldsworthy</title>
+  <meta name="description" content="Built a suite of 13 AI agent tools for the Deputy CFO, enabling natural-language access to financial and operational data.">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">SG<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../skills.html">Skills</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<article class="case-study">
+  <a href="../projects.html" class="back-link">&larr; All Projects</a>
+
+  <div class="mt-8">
+    <span class="tag text-xs font-medium text-accent uppercase tracking-wide">AI</span>
+    <h1>AI Executive Agents</h1>
+    <p class="summary">Built a suite of 13 AI agent tools for the COO, Deputy CFO, and wider executive team, enabling natural-language access to governed financial and operational data across Snowflake's semantic layer.</p>
+    <div class="tech-tags mt-4">
+      <span class="tech-tag">Snowflake Cortex</span>
+      <span class="tech-tag">Semantic Views</span>
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">Sigma</span>
+    </div>
+  </div>
+
+  <h2>Business Problem</h2>
+  <p>Senior executives — including the COO, Deputy CFO, and wider leadership team — needed rapid access to complex financial and operational data but were dependent on analyst teams to pull reports. They required the ability to ask questions in natural language and receive accurate, governed answers within seconds — not days.</p>
+
+  <h2>Why It Was Difficult</h2>
+  <ul>
+    <li>Data spanned multiple domains: finance, commercial, product, and customer</li>
+    <li>Accuracy was non-negotiable — executives make decisions worth millions on these numbers</li>
+    <li>Existing dashboards answered pre-defined questions only; ad-hoc analysis still required human intervention</li>
+    <li>Semantic consistency across 246 governed KPIs had to be maintained</li>
+  </ul>
+
+  <h2>My Role</h2>
+  <p>I owned the end-to-end design and delivery of the AI agent system — from architecture through to deployment and evaluation. This included defining the semantic layer, designing the tool architecture, building the evaluation framework, and presenting to the executive team.</p>
+
+  <h2>Approach</h2>
+
+  <h3>Commercial</h3>
+  <ul>
+    <li>Identified the highest-value questions the CFO's office asked repeatedly</li>
+    <li>Quantified analyst time saved per question type</li>
+    <li>Prioritised tools by business impact and data readiness</li>
+  </ul>
+
+  <h3>Technical</h3>
+  <ul>
+    <li>Built 13 specialised tools covering revenue, retention, acquisition, product performance, forecasting, and cohort analysis</li>
+    <li>Designed a semantic layer in Snowflake ensuring all metrics had single, governed definitions</li>
+    <li>Implemented guardrails to prevent hallucination and ensure answers traced back to source data</li>
+  </ul>
+
+  <h3>Evaluation</h3>
+  <ul>
+    <li>Created a multi-dimensional evaluation framework testing accuracy, relevance, and completeness</li>
+    <li>Ran blind tests comparing agent answers to analyst-produced answers</li>
+    <li>Iterated on prompt engineering and tool design based on evaluation results</li>
+  </ul>
+
+  <h2>Architecture</h2>
+  <pre>
+Executive (Natural Language Question)
+        ↓
+   Cortex Agent
+        ↓
+   Tool Selection (13 tools)
+        ↓
+   Semantic Views (governed metrics)
+        ↓
+   Snowflake (source data)
+        ↓
+   Formatted Response → Executive</pre>
+
+  <h2>Technologies</h2>
+  <ul>
+    <li><strong>Snowflake Cortex</strong> — Agent orchestration and LLM inference</li>
+    <li><strong>Semantic Views</strong> — Governed metric definitions</li>
+    <li><strong>Python</strong> — Tool logic and evaluation framework</li>
+    <li><strong>SQL</strong> — Complex analytical queries</li>
+    <li><strong>Sigma</strong> — Visual verification and dashboard cross-reference</li>
+  </ul>
+
+  <h2>Outcome</h2>
+  <ul>
+    <li>Executive team able to self-serve complex analytical questions</li>
+    <li>Analyst time freed for higher-value strategic work</li>
+    <li>Response time reduced from days to seconds for routine questions</li>
+    <li>Framework established for scaling AI agents across other business functions</li>
+  </ul>
+
+  <h2>Lessons Learned</h2>
+  <ul>
+    <li>Semantic governance is the foundation — without clean, trusted metric definitions, AI agents produce confident but wrong answers</li>
+    <li>Evaluation must be continuous, not a one-off exercise</li>
+    <li>Executive trust is earned through transparency: showing the source data behind every answer is critical</li>
+    <li>Start with narrow, high-confidence tools rather than one broad agent that hallucinates</li>
+  </ul>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="text-sm text-muted">&copy; 2025 Sean Goldsworthy. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sean-goldsworthy-2992a6145" target="_blank">LinkedIn</a>
+      <a href="mailto:spgoldy1995@hotmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goal Trees — Sean Goldsworthy</title>
+  <meta name="description" content="Hierarchical KPI decomposition enabling executives to trace outcomes to operational levers.">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">SG<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../skills.html">Skills</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<article class="case-study">
+  <a href="../projects.html" class="back-link">&larr; All Projects</a>
+
+  <div class="mt-8">
+    <span class="tag text-xs font-medium text-accent uppercase tracking-wide">Strategy</span>
+    <h1>Goal Trees</h1>
+    <p class="summary">Designed a hierarchical KPI decomposition and data governance framework — defining, governing, and owning ~240 KPIs across the business, enabling executives to trace high-level outcomes to actionable operational levers.</p>
+    <div class="tech-tags mt-4">
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">Snowflake</span>
+      <span class="tech-tag">Sigma</span>
+      <span class="tech-tag">Data Governance</span>
+      <span class="tech-tag">Semantic Layer</span>
+      <span class="tech-tag">Python</span>
+    </div>
+  </div>
+
+  <h2>Business Problem</h2>
+  <p>The executive team operated with high-level KPIs (revenue, margin, active customers) but had no structured way to decompose poor performance into root causes. When revenue dropped, the question "why?" led to weeks of ad-hoc investigation rather than a clear diagnostic path.</p>
+
+  <h2>Why It Was Difficult</h2>
+  <ul>
+    <li>Business KPIs are interconnected — a drop in revenue could stem from acquisition, retention, pricing, product mix, or market conditions</li>
+    <li>No standard framework existed for hierarchical decomposition</li>
+    <li>Different teams owned different layers of the tree but didn't communicate effectively</li>
+    <li>Required both mathematical rigour (additive/multiplicative decomposition) and business pragmatism</li>
+  </ul>
+
+  <h2>My Role</h2>
+  <p>I designed the goal tree framework, defined the mathematical relationships between metrics, built the data layer, and facilitated adoption across the leadership team.</p>
+
+  <h2>Approach</h2>
+
+  <h3>Framework Design</h3>
+  <ul>
+    <li>Mapped high-level outcomes (revenue, margin) to their mathematical components</li>
+    <li>Defined each level of decomposition with clear ownership</li>
+    <li>Ensured every metric at every level had a governed definition</li>
+  </ul>
+
+  <h3>Mathematical Structure</h3>
+  <ul>
+    <li>Used multiplicative decomposition where metrics multiply (e.g., Revenue = Customers × ARPU)</li>
+    <li>Used additive decomposition where metrics sum (e.g., Revenue = Casino + Sports + Poker)</li>
+    <li>Built variance analysis that automatically identifies the largest contributors to change</li>
+  </ul>
+
+  <h3>Operationalisation</h3>
+  <ul>
+    <li>Built interactive Sigma dashboards that allow drill-through from top to bottom</li>
+    <li>Automated variance flagging to highlight where attention is needed</li>
+    <li>Integrated with forecasting to show expected vs. actual at each tree level</li>
+  </ul>
+
+  <h2>Architecture</h2>
+  <pre>
+CEO-Level KPIs (Revenue, Margin, Growth)
+      ↓
+Business Unit Decomposition (Casino, Sports, Poker)
+      ↓
+Product Metrics (ARPU, Retention, Conversion)
+      ↓
+Operational Levers (Campaigns, Features, Pricing)
+      ↓
+Team-Level Actions</pre>
+
+  <h2>Technologies</h2>
+  <ul>
+    <li><strong>SQL</strong> — Metric calculations and hierarchical aggregations</li>
+    <li><strong>Snowflake</strong> — Semantic layer and governed metric definitions</li>
+    <li><strong>Sigma</strong> — Interactive drill-through dashboards</li>
+    <li><strong>Python</strong> — Automated variance analysis and alerting</li>
+  </ul>
+
+  <h2>Outcome</h2>
+  <ul>
+    <li>Leadership able to diagnose performance issues in minutes rather than weeks</li>
+    <li>Clear accountability: every metric has an owner at every level</li>
+    <li>Reduced "metric confusion" — eliminated debates about which number is correct</li>
+    <li>Framework adopted as the standard for all business reviews</li>
+  </ul>
+
+  <h2>Lessons Learned</h2>
+  <ul>
+    <li>The framework only works if metric definitions are unambiguous at every level</li>
+    <li>Executive buy-in requires showing the tree in their language (commercial), not yours (technical)</li>
+    <li>Not every metric decomposes cleanly — be honest about where the framework approximates</li>
+    <li>Variance analysis is more valuable than the tree itself — executives care about "what changed" more than "what is"</li>
+  </ul>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="text-sm text-muted">&copy; 2025 Sean Goldsworthy. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sean-goldsworthy-2992a6145" target="_blank">LinkedIn</a>
+      <a href="mailto:spgoldy1995@hotmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

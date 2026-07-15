@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entain Incyte — Sean Goldsworthy</title>
+  <meta name="description" content="Self-service analytics product with governed semantic layer, AI narratives, and forecasting.">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">SG<span>.</span></a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../projects.html" class="active">Projects</a>
+      <a href="../skills.html">Skills</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<article class="case-study">
+  <a href="../projects.html" class="back-link">&larr; All Projects</a>
+
+  <div class="mt-8">
+    <span class="tag text-xs font-medium text-accent uppercase tracking-wide">Product</span>
+    <h1>Entain Incyte</h1>
+    <p class="summary">Designed and built a self-service analytics product combining a governed semantic layer, automated AI narratives, forecasting, and Sigma dashboards for commercial stakeholders.</p>
+    <div class="tech-tags mt-4">
+      <span class="tech-tag">Snowflake</span>
+      <span class="tech-tag">Sigma</span>
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">SQL</span>
+      <span class="tech-tag">Semantic Layer</span>
+      <span class="tech-tag">AI Narratives</span>
+    </div>
+  </div>
+
+  <h2>Business Problem</h2>
+  <p>Commercial teams were drowning in dashboards but starving for insight. Hundreds of reports existed, but stakeholders couldn't answer fundamental questions without requesting analyst support. There was no single source of truth, no governed metrics, and no automated interpretation of what the data meant.</p>
+
+  <h2>Why It Was Difficult</h2>
+  <ul>
+    <li>Over 200 existing dashboards with conflicting definitions</li>
+    <li>Multiple data domains (acquisition, retention, product, finance) with different owners</li>
+    <li>Stakeholders wanted narratives, not charts — "tell me what happened and why"</li>
+    <li>Required real-time data freshness with governed, trustworthy metrics</li>
+  </ul>
+
+  <h2>My Role</h2>
+  <p>I led the product vision, architecture design, metric governance, and delivery of Incyte. This included defining the semantic layer, designing the narrative generation system, building the forecasting engine, and managing stakeholder adoption.</p>
+
+  <h2>Approach</h2>
+
+  <h3>Metric Governance</h3>
+  <ul>
+    <li>Audited all existing metrics across the business</li>
+    <li>Established single definitions with clear ownership</li>
+    <li>Built a governed semantic layer as the single source of truth</li>
+  </ul>
+
+  <h3>AI Narratives</h3>
+  <ul>
+    <li>Developed automated narrative generation for multiple cohort views: Cohort Overview, First 7/30/90 Day LTV, Lifetime LTV, Retention, Product-level narratives (Casino, Sports, Poker, Bingo), Multi-product cross-sell</li>
+    <li>Each narrative adapts based on early-life vs. mature cohort data patterns</li>
+  </ul>
+
+  <h3>Forecasting</h3>
+  <ul>
+    <li>Integrated statistical forecasting models</li>
+    <li>Automated anomaly detection with contextual explanations</li>
+  </ul>
+
+  <h2>Architecture</h2>
+  <pre>
+Source Systems
+      ↓
+Snowflake (governed semantic layer)
+      ↓
+┌─────────────────────────────────┐
+│  AI Narratives  │  Forecasting  │
+└─────────────────────────────────┘
+      ↓
+Sigma Dashboards
+      ↓
+Commercial Stakeholders</pre>
+
+  <h2>Technologies</h2>
+  <ul>
+    <li><strong>Snowflake</strong> — Data platform, semantic layer, dynamic tables</li>
+    <li><strong>Sigma</strong> — Self-service BI and exploration</li>
+    <li><strong>Python</strong> — Narrative generation, forecasting models</li>
+    <li><strong>SQL</strong> — Complex cohort analytics and metric definitions</li>
+  </ul>
+
+  <h2>Outcome</h2>
+  <ul>
+    <li>60% reduction in time from question to answer</li>
+    <li>246 governed KPIs with clear ownership</li>
+    <li>Self-service adoption across commercial, product, and finance teams</li>
+    <li>AI narratives reduced reliance on analyst interpretation</li>
+    <li>Single source of truth eliminated conflicting numbers</li>
+  </ul>
+
+  <h2>Lessons Learned</h2>
+  <ul>
+    <li>Governance must come before self-service — without trusted metrics, self-service creates more confusion</li>
+    <li>Narratives are more powerful than charts for executive audiences</li>
+    <li>The hardest part isn't building the technology — it's getting agreement on metric definitions</li>
+    <li>Adoption requires ongoing stakeholder education, not just a good product</li>
+  </ul>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="text-sm text-muted">&copy; 2025 Sean Goldsworthy. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sean-goldsworthy-2992a6145" target="_blank">LinkedIn</a>
+      <a href="mailto:spgoldy1995@hotmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
